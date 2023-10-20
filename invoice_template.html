@@ -1,0 +1,307 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .housing_heading {
+        text-align: center;
+        border-bottom: medium none;
+        border: 1px solid #000;
+        padding: 15px;
+    }
+    .housing_heading h3 {
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    .housing_heading p {
+        font-size: 16px;
+        color: #000;
+        line-height: 22px;
+        display: block;
+        color: #000;
+    }
+    .housing_society_billing_table h5 {
+        color: #000;
+        text-align: center;
+    }
+    .housing_heading span {
+        text-align: right;
+        display: block;
+        margin-bottom: -10px;
+        font-size: 14px;
+        color: black;
+    }
+    .housing_society table,
+    .housing_society th,
+    .housing_society td {
+        font-size: 14px;
+        color: #000;
+        border: 0.25px solid #000;
+        border-collapse: collapse;
+    }
+    .housing_table_grid th {
+        text-align: center;
+    }
+    .housing_table_grid tr td:nth-last-child(1) {
+        text-align: center;
+        border-right: medium none;
+    }
+    .housing_society table.table {
+        margin-bottom: -1px;
+        width: 100%;
+    }
+    .housing_society table.table h4 {
+        margin-bottom: 0;
+        margin-top: 10px;
+        text-align: left;
+        font-size: 22px;
+        letter-spacing: 0;
+        color: #000;
+    }
+    .notes_secretary td {
+        vertical-align: bottom;
+    }
+    .housing_society {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .housing_table_grid table.table tr td:nth-child(1) {
+        width: 12.8%;
+        text-align: center;
+    }
+    .housing_table_grid table.table tr td:nth-child(2) {
+        width: 68%;
+    }
+    .housing_table_grid table.table tr th:nth-child(1) {
+        width: 12.8%;
+        text-align: center;
+    }
+    .housing_table_grid table.table tr th:nth-child(2) {
+        width: 68%;
+    }
+    .housing_table_grid tr.notes_secretary td:nth-last-child(1) {
+        text-align: center;
+    }
+
+    .housing_society th {
+        border-right: medium none;
+        border-top: medium none;
+        border-color: #000;
+    }
+    .housing_society td {
+        border-top: medium none;
+        border-left: medium none;
+        border-color: #000;
+    }
+    .housing-heading {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+    .txt-right {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .housing_table_grid_bottom {
+        margin-top: 20px;
+    }
+    .housing_table_grid_bottom table.table {
+        border: medium none;
+    }
+    .housing_table_grid_bottom table.table tr td {
+        border-bottom: medium none;
+        border-right: medium none;
+    }
+    .housing_society .housing_table_grid tr:first-child th:first-child {
+        border-left: medium none;
+        border-right: medium none;
+    }
+    .housing_society_billing_table {
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        border-top: medium none !important;
+    }
+    .housing_society_billing_table .housing_heading {
+        border-left: medium none;
+        border-right: medium none;
+        border-bottom: medium none;
+    }
+    .housing-heading h5 {
+        color: #000;
+        text-align: center;
+    }
+    .housing_society_billing_table .housing_pamposh_bill table.table {
+        border-left: medium none;
+        border-right: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table th {
+        border-left: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table td:last-child {
+        border-right: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:last-child th {
+        border-bottom: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:last-child td {
+        border-bottom: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_grid table.table tr:first-child th:first-child {
+        border-right: medium none !important;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_grid table.table tr:last-child td {
+        border-bottom: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_grid table.table tr:last-child td:last-child {
+        border-right: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_grid table.table tr:nth-child(3) td:last-child {
+        border-right: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_grid table.table tr:nth-child(2) td:last-child {
+        border-right: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:nth-child(2) th,
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:nth-child(2) td {
+        border-bottom: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:nth-child(3) th,
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:nth-child(3) td {
+        border-bottom: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:nth-child(3) th:last-childs {
+        border-right: medium none;
+    }
+    .housing_society_billing_table .housing_pamposh_bill .housing_table_row table.table tr:first-child th {
+        border-top: medium none;
+    }
+    .housing_pamposh_bill .housing_table_grid table.table tr:first-child th,
+    .housing_pamposh_bill .housing_table_grid table.table tr:nth-child(2) th,
+    .housing_pamposh_bill .housing_table_grid table.table tr:nth-child(3) th {
+        border-bottom: medium none;
+    }
+    @media (max-width: 1199px) {
+        .housing_table_grid table.table tr td:nth-child(2) {
+            width: 60%;
+        }
+    }
+    @media (max-width: 767px) {
+        .housing_society {
+            padding: 10px;
+            margin-top: 30px;
+        }
+        .housing_society .housing_table_grid table.table {
+            margin-bottom: 20px;
+        }
+        .housing_heading h3 {
+            font-size: 26px;
+        }
+        .housing_society table,
+        .housing_society th,
+        .housing_society td {
+            font-size: 14px;
+        }
+        .housing_society table.table h4 {
+            font-size: 18px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="housing_society">
+            <div class="housing-heading">
+                <h5 id="invoice_heading" style="display: none;">INVOICE</h5>
+                <h5 id="receipt_heading" style="display: none;">RECEIPT</h5>
+            </div>
+            <div class="housing_society_billing_table">
+                <div class="housing_heading">
+                    <h3>PAMPOSH RESIDENTS WELFARE SOCIETY</h3>
+                    <p>
+                        Pamposh Plot 1, Manoharpura, Near Siddharth Nagar H-Block, Jagatpura, Jaipur-302025
+                    </p>
+                    <span><b>REG. NO.- COOP/2022/JAIPUR/204796</b></span>
+                </div>
+                <div class="housing_pamposh_bill">
+                    <div class="housing_table_row">
+                        <table class="table">
+                            <tr>
+                                <th>Owner Name</th>
+                                <td>${bill_data.owner_name}</td>
+                                <th>Flat No</th>
+                                <td>${bill_data.flat}</td>
+                            </tr>
+                            <tr>
+                                <th>Bill No</th>
+                                <td>${bill_data.id}</td>
+                                <th>Bill Issue Date</th>
+                                <td>${ bill_data.created}</td>
+                            </tr>
+                            <tr>
+                                <th>Due Date</th>
+                                <td>null</td>
+                                <th>Payment Mode</th>
+                                <td>${bill_data.payment_mode}</td>
+                            </tr>
+                            <tr>
+                                <th>Bill Month</th>
+                                <td>${bill_data.month}</td>
+                                <th>Payment Date</th>
+                                <td>${bill_data.payment_date}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="housing_table_grid">
+                        <table class="table">
+                            <tr style="text-align: center;">
+                                <td><b>S.No.</b></td>
+                                <td><b>Description of Charges</b></td>
+                                <td><b>Amount</b></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>${bill_data.title}</td>
+                                <td>${bill_data.amount}</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="text-end"><b>Total Payable</b></td>
+                                <td>${bill_data.amount}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start" colspan="2"><b>Amount in Words : </b>${amountInWords}</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="housing_table_grid_bottom">
+                <table class="table">
+                    <tr class="notes_secretary">
+                        <td colspan="2">
+                            <div class="notes" style="text-align: left;">
+                                <b class="me-2" style="display: block;">Notes :</b>
+                                <span class="text-start">
+                                    1. Cheque should be drawn in favour of society only.<br />
+                                    2. Please mention Bill No. and Flat No. on backside of cheque. <br />
+                                    3. Stay updated on upcoming events and activities by visiting our website. <br />
+                                    4. We appreciate your continued support and participation in Society.
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <img id="paid_img" src="<?php echo base_url('assets/images/paid.webp');?>" width="100px" height="100px" style="display: none;" />
+                            <img id="due_img" src="<?php echo base_url('assets/images/due.jpg');?>" width="100px" height="100px" style="display: none;" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
